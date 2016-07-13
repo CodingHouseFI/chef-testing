@@ -1,0 +1,9 @@
+<h1>Chef List:</h1>
+
+<ul>
+  <li ng-repeat='chef in chefs track by $index'>
+    <a ui-sref='chefShow({chefId: chef._id})'>
+      {{ chef.name }}
+    </a>
+  </li>
+</ul>
